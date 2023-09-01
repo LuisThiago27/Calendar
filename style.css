@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Montserrat', sans-serif;
+}
+html,body{   
+    max-width: 100%;
+}
+.clear{
+    clear: both;
+}
+.conteiner{
+    max-width: 100%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 90vh;
+    padding: 40px 2%;
+    max-height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../imagens/capa.png');
+}
+header nav{
+    float: right;
+}
+header nav li{
+    float: left;
+    margin: 0 20px;
+}
+header nav ul{
+    list-style-type: none;
+}
+header li a{
+    color: white;
+    text-decoration: none;
+}
+header .logo{
+    float: left;
+    width: 160px;
+    height: 40px;
+    background-color: #ccc;
+}
+.chamda1{
+    max-width: 600px;
+    float: right;
+    margin: 140px 150px;
+}
+.chamda1 h2{
+    font-size: 50px;
+    color: white;
+    font-weight: normal;
+}
+.chamda1 p{
+    font-size: 20px;
+    color: white;
+    margin-top: 6px;
+}
+.largura{
+    width: 100%;
+}
+.imagen2{
+    padding:0 2%;
+    height: 400px;
+    width: 100%;
+    background-color: #321e53;
+
+}
+section .conteiner1{
+    max-width: 1000px;
+}
+.sessao1-text{
+    width: 50%;
+    margin-top: 60px;
+    padding-left: 50px;
+    position: relative;
+    height: 400px;
+    float: left;
+    left: 65px;
+    color: white;
+}
+.sessao1-text h2{
+   font-weight: 300;
+}
+.sessao1-text p{
+    font-size: 15px;
+    margin-top: 5px;
+}
+.sessao1-text ul{
+    font-size: 15px;
+    list-style-position: inside;
+}
+.sessao1-text ul li{
+    float: left;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.device-sessao1{
+    background-image: url('../imagens/device.png');
+    height: 480px;
+    width: 430px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    left: 35px;
+    position: relative;
+    top: -80px;
+}
+.bnt-1{
+    background-color: #ff703d;
+    width: 165px;
+    height: 44px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    line-height: 44px;
+    text-align: center;
+    border-radius: 20px;
+}
+@media screen and  (max-width: 768px){
+    section.section1 {
+        padding:40px 2%;
+        height: auto;     
+    }
+    .sessao1-text{
+        float: none;
+    }
+    .device-sessao1{
+        display: none;
+    }
+    
+}
