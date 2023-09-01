@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>Calendário Dinamico JavaScript | Luis Thiago</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font Link for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <p class="current-date"></p>
+        <div class="icons">
+          <span id="prev" class="material-symbols-rounded">chevron_left</span>
+          <span id="next" class="material-symbols-rounded">chevron_right</span>
+        </div>
+      </header>
+      <div class="calendar">
+        <ul class="weeks">
+          <li>Dom</li>
+          <li>Seg</li>
+          <li>Ter</li>
+          <li>Qua</li>
+          <li>Qui</li>
+          <li>Sex</li>
+          <li>Sab</li>
+        </ul>
+        <ul class="days"></ul>
+
+        <p class="text-info"><i class="fa-solid fa-circle-info"></i> Não abrimos aos Domingos!</p>
+          
+      </div>
+    </div>
+
+    <div class="schedule-container none">
+        <h2>Escolha um horário para agendar</h2>
+        <div class="select-menu">
+          <div class="select-btn">
+            <span class="sBtn-text">Selecione um horário</span>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+
+          <ul class="options">
+            <li class="option">
+              <span class="option-text">12:00</span>
+            </li>
+            <li class="option">
+              <span class="option-text">12:30</span>
+            </li>
+            <li class="option">
+              <span class="option-text">13:00</span>
+            </li>
+            <li class="option">
+              <span class="option-text">13:30</span>
+            </li>
+            <li class="option">
+              <span class="option-text">14:00</span>
+            </li>
+          </ul>
+
+        </div>
+        <button id="schedule-button">Agendar</button>
+        <p id="schedule-result"></p>
+    </div>
+  </body>
+</html>
